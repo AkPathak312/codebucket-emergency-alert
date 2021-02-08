@@ -223,7 +223,7 @@ class DashBoardActivity : AppCompatActivity() {
             .addFormDataPart("imageDesc", description!!.text.toString())
             .build()
         val request: Request = Request.Builder()
-            .url("https://42a010867f1c.ngrok.io/user/form")
+            .url("http://androidform.herokuapp.com/user/form")
             .method("POST", body)
             .addHeader(
                 "Authorization",

@@ -33,7 +33,7 @@ interface AppApi {
     companion object {
         operator fun invoke(): AppApi {
             return Retrofit.Builder()
-                .baseUrl("https://42a010867f1c.ngrok.io/")
+                .baseUrl("http://androidform.herokuapp.com")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
                 .create(AppApi::class.java)
